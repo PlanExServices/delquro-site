@@ -2,188 +2,147 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Delquro Labs</title>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      background: radial-gradient(circle at top left, rgba(72,174,179,0.15), transparent 40%), #191C24;
-      color: #ffffff;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 60px 20px;
-    }
-
-    /* HERO */
-    .hero {
-      display: flex;
-      align-items: center;
-      gap: 40px;
-      margin-bottom: 60px;
-      flex-wrap: wrap;
-    }
-
-    .logo {
-      width: 220px;
-      filter: drop-shadow(0 0 40px rgba(72,174,179,0.35));
-    }
-
-    .hero-text {
-      max-width: 500px;
-    }
-
-    .brand {
-      font-size: 42px;
-      margin: 0;
-      font-weight: 600;
-      letter-spacing: 0.5px;
-    }
-
-    .brand span {
-      color: #48AEB3;
-    }
-
-    .tagline {
-      margin-top: 10px;
-      font-size: 16px;
-      opacity: 0.85;
-    }
-
-    /* SECTIONS */
-    h2 {
-      color: #48AEB3;
-      margin-top: 40px;
-      margin-bottom: 10px;
-      font-size: 18px;
-      letter-spacing: 0.5px;
-    }
-
-    .card {
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid rgba(255,255,255,0.05);
-      border-radius: 12px;
-      padding: 22px;
-      backdrop-filter: blur(6px);
-    }
-
-    p {
-      margin: 0;
-      opacity: 0.9;
-      line-height: 1.6;
-    }
-
-    .product-name {
-      font-size: 20px;
-      font-weight: 600;
-      margin-bottom: 8px;
-    }
-
-    /* LINKS */
-    .links {
-      margin-top: 10px;
-    }
-
-    a {
-      color: #48AEB3;
-      text-decoration: none;
-      margin-right: 15px;
-      font-size: 14px;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    /* FOOTER */
-    .footer {
-      margin-top: 70px;
-      font-size: 13px;
-      opacity: 0.6;
-    }
-
-    /* MOBILE */
-    @media (max-width: 600px) {
-      .hero {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .logo {
-        width: 180px;
-      }
-
-      .brand {
-        font-size: 32px;
-      }
-    }
-  </style>
+  <meta
+    name="description"
+    content="Delquro Labs builds focused, production-ready software that improves how real teams communicate, coordinate, and operate."
+  />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <div class="container">
+  <div class="site-shell">
+    <header class="topbar">
+      <div class="wrap topbar-inner">
+        <a href="index.html" class="brand-lockup">
+          <img src="logo.png" alt="Delquro Labs logo" class="brand-logo" />
+          <div class="brand-text">
+            <span class="brand-name">Del<span>Quro</span> Labs</span>
+            <span class="brand-subtitle">Focused operational software</span>
+          </div>
+        </a>
 
-    <!-- HERO -->
-    <div class="hero">
-      <img src="logo.png" alt="Delquro Labs Logo" class="logo">
-
-      <div class="hero-text">
-        <h1 class="brand">Del<span>Quro</span> Labs</h1>
-        <p class="tagline">
-          Building focused, production-ready software that improves how real teams communicate and operate.
-        </p>
+        <nav class="nav">
+          <a href="#focus">Focus</a>
+          <a href="commonwealth-connect.html">Commonwealth: Connect</a>
+          <a href="support.html">Support</a>
+        </nav>
       </div>
-    </div>
+    </header>
 
-    <!-- FOCUS -->
-    <h2>Focus</h2>
-    <div class="card">
-      <p>
-        Delquro Labs develops streamlined applications designed to remove friction from daily operations.
-        The focus is simple: clarity, reliability, and tools that actually get used.
-      </p>
-    </div>
+    <main>
+      <section class="hero">
+        <div class="wrap hero-grid">
+          <div class="hero-copy">
+            <div class="eyebrow">Independent software studio</div>
+            <h1>
+              Software built for
+              <span>real teams doing real work</span>
+            </h1>
+            <p class="hero-text">
+              Delquro Labs develops focused, production-ready applications that improve
+              communication, coordination, and day-to-day operational clarity.
+            </p>
 
-    <!-- PRODUCT -->
-    <h2>Current Application</h2>
-    <div class="card">
-      <div class="product-name">Commonwealth: Connect</div>
-      <p>
-        A communication and workflow platform designed specifically for veterinary hospital teams,
-        providing clear visibility into schedules, updates, and team coordination.
-      </p>
-    </div>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="commonwealth-connect.html">View Commonwealth: Connect</a>
+              <a class="btn btn-secondary" href="support.html">Support</a>
+            </div>
+          </div>
 
-    <!-- AUDIENCE -->
-    <h2>Who It's For</h2>
-    <div class="card">
-      <p>
-        Built for veterinary hospitals and clinical teams that need a centralized, dependable way
-        to stay aligned across fast-moving daily operations.
-      </p>
-    </div>
+          <div class="hero-panel">
+            <div class="panel panel-highlight">
+              <div class="panel-label">Current application</div>
+              <h2>Commonwealth: Connect</h2>
+              <p>
+                A communication and workflow platform designed for veterinary hospital
+                teams that need a dependable way to stay aligned.
+              </p>
+              <a class="text-link" href="commonwealth-connect.html">Open product page →</a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <!-- LEGAL -->
-    <h2>Support & Legal</h2>
-    <div class="card">
-      <div class="links">
-        <a href="/support.html">Support</a>
-        <a href="/privacy.html">Privacy Policy</a>
-        <a href="/terms.html">Terms of Service</a>
+      <section id="focus" class="section">
+        <div class="wrap">
+          <div class="section-head">
+            <div class="eyebrow">Focus</div>
+            <h2>Simple, reliable tools that remove friction from daily operations</h2>
+            <p>
+              The priority is straightforward: build software that is clear, dependable,
+              and actually useful in live working environments.
+            </p>
+          </div>
+
+          <div class="card-grid three-up">
+            <article class="card">
+              <h3>Clear Communication</h3>
+              <p>
+                Better visibility into updates, priorities, and team coordination.
+              </p>
+            </article>
+
+            <article class="card">
+              <h3>Operational Simplicity</h3>
+              <p>
+                Focused products that avoid clutter and support repeatable daily use.
+              </p>
+            </article>
+
+            <article class="card">
+              <h3>Production-Ready Mindset</h3>
+              <p>
+                Practical software built for real deployment, not endless concept work.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tight">
+        <div class="wrap">
+          <div class="feature-band">
+            <div>
+              <div class="eyebrow">Featured product</div>
+              <h2>Commonwealth: Connect</h2>
+              <p>
+                Built for veterinary hospitals and clinical teams that need centralized,
+                dependable communication across fast-moving daily operations.
+              </p>
+            </div>
+
+            <div class="feature-actions">
+              <a class="btn btn-primary" href="commonwealth-connect.html">Open product page</a>
+              <a class="btn btn-secondary" href="mailto:info@delquro.com">Contact Delquro Labs</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap footer-inner">
+        <div>
+          <div class="footer-brand">Delquro Labs</div>
+          <p class="footer-copy">
+            Focused software for communication, coordination, and operational clarity.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <a href="commonwealth-connect.html">Commonwealth: Connect</a>
+          <a href="support.html">Support</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
       </div>
-      <p style="margin-top:10px;">Contact: info@delquro.com</p>
-    </div>
 
-    <!-- FOOTER -->
-    <div class="footer">
-      © 2026 Delquro Labs
-    </div>
-
+      <div class="wrap footer-bottom">
+        <span>© 2026 Delquro Labs</span>
+        <span>info@delquro.com</span>
+      </div>
+    </footer>
   </div>
 </body>
 </html>
