@@ -1,7 +1,5 @@
 :root {
-  color-scheme: dark light;
-
-  --bg: #191c24;
+  color  --bg: #191c24;  color-scheme: dark light;
   --bg-2: #141821;
   --surface: rgba(255, 255, 255, 0.07);
   --surface-strong: rgba(255, 255, 255, 0.1);
@@ -608,3 +606,4 @@ li + li {
     width: 100%;
   }
 }
+
