@@ -10,28 +10,37 @@
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      background: #191C24;
+      background: radial-gradient(circle at top left, rgba(72,174,179,0.15), transparent 40%), #191C24;
       color: #ffffff;
     }
 
     .container {
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
-      padding: 40px 20px;
+      padding: 60px 20px;
+    }
+
+    /* HERO */
+    .hero {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      margin-bottom: 60px;
+      flex-wrap: wrap;
     }
 
     .logo {
-      display: block;
-      max-width: 220px;
-      margin-bottom: 20px;
+      width: 220px;
+      filter: drop-shadow(0 0 40px rgba(72,174,179,0.35));
     }
 
-    h1 {
-      font-size: 36px;
-      margin: 0;
+    .hero-text {
+      max-width: 500px;
     }
 
     .brand {
+      font-size: 42px;
+      margin: 0;
       font-weight: 600;
       letter-spacing: 0.5px;
     }
@@ -40,41 +49,78 @@
       color: #48AEB3;
     }
 
-    p {
-      opacity: 0.9;
-      line-height: 1.6;
+    .tagline {
+      margin-top: 10px;
+      font-size: 16px;
+      opacity: 0.85;
     }
 
+    /* SECTIONS */
     h2 {
       color: #48AEB3;
       margin-top: 40px;
       margin-bottom: 10px;
+      font-size: 18px;
+      letter-spacing: 0.5px;
     }
 
     .card {
-      background: #222631;
-      border-radius: 10px;
-      padding: 20px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255,255,255,0.05);
+      border-radius: 12px;
+      padding: 22px;
+      backdrop-filter: blur(6px);
+    }
+
+    p {
+      margin: 0;
+      opacity: 0.9;
+      line-height: 1.6;
+    }
+
+    .product-name {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    /* LINKS */
+    .links {
       margin-top: 10px;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    .footer {
-      margin-top: 60px;
-      font-size: 14px;
-      opacity: 0.7;
     }
 
     a {
       color: #48AEB3;
       text-decoration: none;
+      margin-right: 15px;
+      font-size: 14px;
     }
 
     a:hover {
       text-decoration: underline;
+    }
+
+    /* FOOTER */
+    .footer {
+      margin-top: 70px;
+      font-size: 13px;
+      opacity: 0.6;
+    }
+
+    /* MOBILE */
+    @media (max-width: 600px) {
+      .hero {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .logo {
+        width: 180px;
+      }
+
+      .brand {
+        font-size: 32px;
+      }
     }
   </style>
 </head>
@@ -82,58 +128,60 @@
 <body>
   <div class="container">
 
-    <!-- Logo -->
-    <img src="logo.png" alt="Delquro Labs Logo" class="logo" />
+    <!-- HERO -->
+    <div class="hero">
+      <img src="logo.png" alt="Delquro Labs Logo" class="logo">
 
-    <!-- Company Focus -->
-    <h1 class="brand">Del<span>quro</span> Labs</h1>
-    <p>
-      Delquro Labs develops simple, reliable software tools designed to support
-      real-world team operations.
-    </p>
+      <div class="hero-text">
+        <h1 class="brand">Del<span>Quro</span> Labs</h1>
+        <p class="tagline">
+          Building focused, production-ready software that improves how real teams communicate and operate.
+        </p>
+      </div>
+    </div>
 
-    <!-- About -->
+    <!-- FOCUS -->
     <h2>Focus</h2>
     <div class="card">
       <p>
-        Our work is centered on building focused, production-ready applications
-        that improve communication, coordination, and day-to-day workflow clarity.
+        Delquro Labs develops streamlined applications designed to remove friction from daily operations.
+        The focus is simple: clarity, reliability, and tools that actually get used.
       </p>
     </div>
 
-    <!-- Current Product -->
+    <!-- PRODUCT -->
     <h2>Current Application</h2>
     <div class="card">
-      <p><strong>Commonwealth: Connect</strong></p>
+      <div class="product-name">Commonwealth: Connect</div>
       <p>
-        A team communication and operations platform designed specifically for
-        veterinary hospital environments.
+        A communication and workflow platform designed specifically for veterinary hospital teams,
+        providing clear visibility into schedules, updates, and team coordination.
       </p>
     </div>
 
-    <!-- Audience -->
+    <!-- AUDIENCE -->
     <h2>Who It's For</h2>
     <div class="card">
       <p>
-        Veterinary hospitals and clinical teams that need a clear, centralized way
-        to stay connected and informed.
+        Built for veterinary hospitals and clinical teams that need a centralized, dependable way
+        to stay aligned across fast-moving daily operations.
       </p>
     </div>
 
-    <!-- Legal -->
+    <!-- LEGAL -->
     <h2>Support & Legal</h2>
     <div class="card">
-      <p>
-        <a href="/support.html">Support</a> |
-        <a href="/privacy.html">Privacy Policy</a> |
+      <div class="links">
+        <a href="/support.html">Support</a>
+        <a href="/privacy.html">Privacy Policy</a>
         <a href="/terms.html">Terms of Service</a>
-      </p>
-      <p>Contact: info@delquro.com</p>
+      </div>
+      <p style="margin-top:10px;">Contact: info@delquro.com</p>
     </div>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <div class="footer">
-      <p>© 2026 Delquro Labs</p>
+      © 2026 Delquro Labs
     </div>
 
   </div>
