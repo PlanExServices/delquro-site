@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
   <title>Delquro Labs</title>
 
   <style>
@@ -11,7 +12,6 @@
       font-family: -apple-system, BlinkMacSystemFont, sans-serif;
       background: #191C24;
       color: #ffffff;
-      line-height: 1.6;
     }
 
     .container {
@@ -20,25 +20,46 @@
       padding: 40px 20px;
     }
 
+    .logo {
+      display: block;
+      max-width: 220px;
+      margin-bottom: 20px;
+    }
+
     h1 {
-      font-size: 40px;
-      margin-bottom: 10px;
+      font-size: 36px;
+      margin: 0;
+    }
+
+    .brand {
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    .brand span {
+      color: #48AEB3;
+    }
+
+    p {
+      opacity: 0.9;
+      line-height: 1.6;
     }
 
     h2 {
       color: #48AEB3;
       margin-top: 40px;
-    }
-
-    p {
-      opacity: 0.9;
+      margin-bottom: 10px;
     }
 
     .card {
       background: #222631;
       border-radius: 10px;
       padding: 20px;
-      margin-top: 20px;
+      margin-top: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
     }
 
     .footer {
@@ -61,41 +82,45 @@
 <body>
   <div class="container">
 
-    <!-- Header -->
-    <h1>Delquro Labs</h1>
-    <p>Operational tools for modern veterinary teams.</p>
+    <!-- Logo -->
+    <img src="logo.png" alt="Delquro Labs Logo" class="logo" />
 
-    <!-- Hero -->
+    <!-- Company Focus -->
+    <h1 class="brand">Del<span>quro</span> Labs</h1>
+    <p>
+      Delquro Labs develops simple, reliable software tools designed to support
+      real-world team operations.
+    </p>
+
+    <!-- About -->
+    <h2>Focus</h2>
     <div class="card">
-      <h2>Mission Connect</h2>
       <p>
-        Mission Connect is a secure, team-focused application designed to help veterinary
-        hospitals stay aligned, communicate efficiently, and manage daily operations in one place.
+        Our work is centered on building focused, production-ready applications
+        that improve communication, coordination, and day-to-day workflow clarity.
       </p>
     </div>
 
-    <!-- What it does -->
-    <h2>Core Capabilities</h2>
+    <!-- Current Product -->
+    <h2>Current Application</h2>
     <div class="card">
-      <ul>
-        <li>Team-wide group communication</li>
-        <li>Real-time notifications</li>
-        <li>Centralized schedule visibility</li>
-        <li>PTO tracking for staff</li>
-        <li>Manager updates and daily huddle posts</li>
-      </ul>
-    </div>
-
-    <!-- Who it's for -->
-    <h2>Designed For</h2>
-    <div class="card">
+      <p><strong>Commonwealth: Connect</strong></p>
       <p>
-        Veterinary hospitals and clinical teams that need a simple, reliable way to stay connected
-        and organized across daily operations.
+        A team communication and operations platform designed specifically for
+        veterinary hospital environments.
       </p>
     </div>
 
-    <!-- Legal / Support -->
+    <!-- Audience -->
+    <h2>Who It's For</h2>
+    <div class="card">
+      <p>
+        Veterinary hospitals and clinical teams that need a clear, centralized way
+        to stay connected and informed.
+      </p>
+    </div>
+
+    <!-- Legal -->
     <h2>Support & Legal</h2>
     <div class="card">
       <p>
