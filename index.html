@@ -1,68 +1,96 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Delquro Labs</title>
-  <meta name="description" content="Delquro Labs builds focused software for communication, coordination, and operational clarity." />
+  <meta name="description" content="Focused software for communication, coordination, and operational clarity." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="site-shell">
     <header class="topbar">
-      <div class="wrap topbar-inner">
-        <a href="index.html" class="brand-lockup">
-          <img src="logo.png" class="brand-logo" />
-          <div class="brand-text">
-            <span class="brand-name">Del<span>Quro</span> Labs</span>
-            <span class="brand-subtitle">Operational software, thoughtfully built</span>
-          </div>
-        </a>
-        <nav class="nav">
-          <a href="#focus">Focus</a>
-          <a href="commonwealth-connect.html">Commonwealth: Connect</a>
-          <a href="support.html">Support</a>
-        </nav>
+  <div class="wrap topbar-inner">
+    <a href="index.html" class="brand-lockup" aria-label="Delquro Labs home">
+      <img src="logo.png" alt="Delquro Labs logo" class="brand-logo" />
+      <div class="brand-text">
+        <span class="brand-name">Del<span>Quro</span> Labs</span>
+        <span class="brand-subtitle">Operational software, thoughtfully built</span>
       </div>
-    </header>
-
+    </a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="commonwealth-connect.html">Commonwealth: Connect</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </div>
+</header>
     <main>
-      <section class="hero">
+      <section class="hero hero-home">
         <div class="wrap hero-grid">
-          <div>
+          <div class="hero-copy">
             <span class="eyebrow">Independent software studio</span>
-            <h1>
-              Software built for
-              <span>real teams</span><br/>
-              doing real work.
-            </h1>
-            <p class="hero-text">Focused tools for communication and operational clarity.</p>
+            <h1>Software for <span>real teams</span><br />that need clarity.</h1>
+            <p class="hero-text">Delquro Labs creates focused software for communication, scheduling visibility, and dependable day-to-day operations.</p>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="commonwealth-connect.html">View Current Application</a>
-              <a class="btn btn-secondary" href="support.html">Support</a>
+              <a href="commonwealth-connect.html" class="btn btn-primary">View Current Application</a>
+              <a href="support.html" class="btn btn-secondary">Support</a>
             </div>
           </div>
-
-          <div class="hero-visual">
-            <div class="app-frame">
-              <div class="app-frame-header">
-                <span class="window-dot"></span>
-                <span class="window-dot"></span>
-                <span class="window-dot"></span>
-              </div>
-              <div class="app-frame-content">
-                <div class="screen-label">Current application</div>
-                <div class="app-panel app-panel-main">
-                  <div class="app-panel-title">Commonwealth: Connect</div>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="product-stage">
+              <div class="product-shell">
+                <div class="shell-topbar"><span class="shell-dot"></span><span class="shell-dot"></span><span class="shell-dot"></span></div>
+                <div class="shell-body">
+                  <div class="shell-chip">Current application</div>
+                  <div class="workflow-card">
+                    <div class="workflow-title">Commonwealth: Connect</div>
+                    <div class="line-stack"><span></span><span></span><span></span></div>
+                  </div>
+                  <div class="pill-row"><span>Team chat</span><span>Schedules</span><span>PTO</span><span>Huddles</span></div>
+                  <div class="mini-grid">
+                    <div class="mini-card"><div class="mini-title">Manager updates</div><div class="line-stack"><span></span><span></span></div></div>
+                    <div class="mini-card mini-card-accent"><div class="mini-title">Daily workflow</div><div class="line-stack"><span></span><span></span></div></div>
+                  </div>
                 </div>
               </div>
+              <div class="float-note note-left"><span class="chip">Focused build</span><p>Designed for daily operational use.</p></div>
+              <div class="float-note note-right"><span class="chip">Clear workflow</span><p>Communication, visibility, and alignment.</p></div>
             </div>
-            <div class="floating-note note-left"><p>Built for daily use</p></div>
-            <div class="floating-note note-right"><p>Clear workflows</p></div>
           </div>
         </div>
       </section>
+      <section id="focus" class="section">
+        <div class="wrap">
+          <div class="section-head"><span class="eyebrow">Focus</span><h2>Simple tools with real operational value</h2><p>The goal is not to build more software. The goal is to build software teams can rely on every day.</p></div>
+          <div class="card-grid three-up">
+            <article class="card"><div class="icon-dot"></div><h3>Clear Communication</h3><p>Reduce missed updates and improve alignment across active teams.</p></article>
+            <article class="card"><div class="icon-dot"></div><h3>Practical Workflow Design</h3><p>Built around daily use instead of feature sprawl and unnecessary complexity.</p></article>
+            <article class="card"><div class="icon-dot"></div><h3>Production-Ready Thinking</h3><p>Software designed to be stable, usable, and worth opening every day.</p></article>
+          </div>
+        </div>
+      </section>
+      <section class="section section-tight"><div class="wrap"><div class="feature-band"><div class="feature-copy"><span class="eyebrow">Featured application</span><h2>Commonwealth: Connect</h2><p>Built for veterinary hospital teams that need a centralized way to keep people informed, coordinated, and aligned.</p></div><div class="feature-actions"><a href="commonwealth-connect.html" class="btn btn-primary">Open Product Page</a><a href="privacy.html" class="btn btn-secondary">Privacy Policy</a></div></div></div></section>
+      <section class="section section-tight"><div class="wrap"><div class="split-panel"><div><span class="eyebrow">Built by Delquro Labs</span><h2>Focused company. Focused products.</h2></div><p>Delquro Labs is centered on a simple principle: software should make the workday easier, clearer, and more coordinated â€” not more cluttered.</p></div></div></section>
     </main>
+    <footer class="footer">
+  <div class="wrap footer-inner">
+    <div>
+      <div class="footer-brand">Delquro Labs</div>
+      <p class="footer-copy">Focused software for communication, coordination, and operational clarity.</p>
+    </div>
+    <div class="footer-links">
+      <a href="commonwealth-connect.html">Commonwealth: Connect</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>Â© 2026 Delquro Labs</span>
+    <span>info@delquro.com</span>
+  </div>
+</footer>
   </div>
 </body>
 </html>
