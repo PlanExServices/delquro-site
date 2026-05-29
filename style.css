@@ -196,3 +196,32 @@ img { display: block; max-width: 100%; }
   .brand-logo { width: 52px; height: 52px; }
 }
 
+
+/* Policy Pack */
+.policy-page {
+  position: relative;
+}
+
+.policy-page .policy-meta {
+  margin: -2px 0 18px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.policy-page a {
+  color: var(--accent-bright);
+  font-weight: 700;
+}
+
+.policy-page h2 {
+  margin-top: 30px;
+}
+
+.policy-page ul {
+  margin: 12px 0 0;
+  padding-left: 22px;
+}
+
+.policy-page li + li {
+  margin-top: 8px;
+}
