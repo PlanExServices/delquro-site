@@ -226,9 +226,8 @@ img { display: block; max-width: 100%; }
   margin-top: 8px;
 }
 
-/* Plain Policy Pages
-   Intentionally boring, readable, low-design treatment for legal/support content.
-   Keeps robust content while visually separating policy pages from marketing pages.
+/* Paragraph Policy Pages
+   Legal-document paragraph style. Boring, dense, and system dark/light compatible.
 */
 body.plain-policy-page {
   background: var(--bg) !important;
@@ -236,89 +235,102 @@ body.plain-policy-page {
 }
 
 body.plain-policy-page .topbar {
-  position: static;
-  background: var(--surface-strong) !important;
-  border-bottom: 1px solid var(--footer-border) !important;
+  position: static !important;
+  background: var(--bg) !important;
+  border-bottom: none !important;
   backdrop-filter: none !important;
 }
 
 body.plain-policy-page .brand-logo {
   filter: none !important;
-}
-
-body.plain-policy-page .brand-name span,
-body.plain-policy-page .eyebrow,
-body.plain-policy-page .policy-page a {
-  color: var(--accent-bright) !important;
-}
-
-body.plain-policy-page .nav a,
-body.plain-policy-page .brand-subtitle,
-body.plain-policy-page .footer-copy,
-body.plain-policy-page .footer-links a,
-body.plain-policy-page .footer-bottom,
-body.plain-policy-page .policy-page .policy-meta,
-body.plain-policy-page .policy-page p,
-body.plain-policy-page .policy-page li {
-  color: var(--muted) !important;
+  box-shadow: none !important;
 }
 
 body.plain-policy-page .content-panel.policy-page {
-  max-width: 880px;
-  margin: 42px auto;
-  padding: 28px;
-  background: var(--surface-strong) !important;
-  border: 1px solid var(--footer-border) !important;
-  border-radius: 8px !important;
+  max-width: 920px !important;
+  margin: 24px auto !important;
+  padding: 18px 22px !important;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
   box-shadow: none !important;
 }
 
 body.plain-policy-page .content-panel.policy-page::before,
-body.plain-policy-page .content-panel.policy-page::after {
+body.plain-policy-page .content-panel.policy-page::after,
+body.plain-policy-page .eyebrow {
   display: none !important;
 }
 
 body.plain-policy-page .policy-page h1 {
-  margin: 0 0 8px;
+  margin: 0 0 8px !important;
   color: var(--text) !important;
-  font-size: clamp(2rem, 4vw, 2.75rem);
-  letter-spacing: -0.035em;
+  font-size: 1.55rem !important;
+  line-height: 1.2 !important;
+  letter-spacing: 0 !important;
+  font-weight: 700 !important;
 }
 
 body.plain-policy-page .policy-page h2 {
-  margin-top: 28px;
-  padding-top: 18px;
-  border-top: 1px solid var(--border);
+  margin: 20px 0 6px !important;
+  padding: 0 !important;
+  border: none !important;
   color: var(--text) !important;
-  font-size: 1.2rem;
-  letter-spacing: -0.01em;
+  font-size: 1rem !important;
+  line-height: 1.25 !important;
+  letter-spacing: 0 !important;
+  font-weight: 700 !important;
+}
+
+body.plain-policy-page .policy-page p,
+body.plain-policy-page .policy-page .policy-meta {
+  margin: 0 0 10px !important;
+  color: var(--muted) !important;
+  font-size: 0.9rem !important;
+  line-height: 1.45 !important;
+  text-indent: 1.25rem !important;
+}
+
+body.plain-policy-page .policy-page .policy-meta,
+body.plain-policy-page .policy-page h1 + p,
+body.plain-policy-page .policy-page h1 + .policy-meta + p {
+  text-indent: 0 !important;
 }
 
 body.plain-policy-page .policy-page ul {
-  margin: 12px 0 0;
-  padding-left: 22px;
+  list-style: none !important;
+  margin: 0 0 10px !important;
+  padding: 0 !important;
+}
+
+body.plain-policy-page .policy-page li {
+  display: inline !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  color: var(--muted) !important;
+  font-size: 0.9rem !important;
+  line-height: 1.45 !important;
+}
+
+body.plain-policy-page .policy-page li::before,
+body.plain-policy-page .policy-page li::marker {
+  content: "" !important;
+  display: none !important;
 }
 
 body.plain-policy-page .footer {
-  padding-top: 24px;
+  padding-top: 16px !important;
   background: transparent !important;
 }
 
 body.plain-policy-page .footer-inner,
 body.plain-policy-page .footer-bottom {
-  border-color: var(--footer-border) !important;
-}
-
-body.plain-policy-page .btn,
-body.plain-policy-page .btn-primary,
-body.plain-policy-page .btn-secondary {
-  box-shadow: none !important;
+  border-color: transparent !important;
 }
 
 @media (max-width: 760px) {
   body.plain-policy-page .content-panel.policy-page {
-    margin: 24px auto;
-    padding: 20px;
+    margin: 16px auto !important;
+    padding: 16px !important;
   }
 }
-
