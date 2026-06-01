@@ -508,3 +508,57 @@ body.plain-policy-page .footer-bottom {
     padding: 18px;
   }
 }
+
+/* Commonwealth Product Hero Headline Fix */
+.hero:not(.hero-home) .hero-copy h1 {
+  max-width: 680px !important;
+  width: 100% !important;
+  font-size: clamp(3rem, 5vw, 5rem) !important;
+  line-height: 0.96 !important;
+  letter-spacing: -0.055em !important;
+  overflow-wrap: normal !important;
+  word-break: normal !important;
+  hyphens: none !important;
+}
+
+.hero:not(.hero-home) .hero-copy h1 span {
+  white-space: nowrap !important;
+}
+
+@media (max-width: 980px) {
+  .hero:not(.hero-home) .hero-copy h1 {
+    max-width: 100% !important;
+    font-size: clamp(2.65rem, 8vw, 4.1rem) !important;
+  }
+}
+
+@media (max-width: 720px) {
+  .hero:not(.hero-home) .hero-copy h1 {
+    max-width: 100% !important;
+    font-size: clamp(2.25rem, 11vw, 3.45rem) !important;
+    letter-spacing: -0.045em !important;
+  }
+
+  .hero:not(.hero-home) .hero-copy h1 span {
+    white-space: normal !important;
+  }
+}
+
+/* Product Page Headline No Mid-Word Break */
+.hero:not(.hero-home) .hero-copy h1 {
+  max-width: 720px !important;
+  width: 100% !important;
+  overflow-wrap: normal !important;
+  word-break: normal !important;
+  hyphens: none !important;
+}
+
+.hero:not(.hero-home) .hero-copy h1 span {
+  white-space: nowrap !important;
+}
+
+@media (max-width: 720px) {
+  .hero:not(.hero-home) .hero-copy h1 span {
+    white-space: normal !important;
+  }
+}
