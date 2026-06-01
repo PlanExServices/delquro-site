@@ -562,3 +562,68 @@ body.plain-policy-page .footer-bottom {
     white-space: normal !important;
   }
 }
+
+/* Homepage Hero Design Polish */
+.hero-home {
+  padding-top: 108px !important;
+}
+
+.hero-home::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 18% 26%, rgba(115,159,138,0.12), transparent 0 30%),
+    radial-gradient(circle at 76% 34%, rgba(82,126,105,0.10), transparent 0 28%);
+}
+
+.hero-home .hero-grid {
+  align-items: center;
+}
+
+.hero-home .hero-copy {
+  transform: translateY(-6px);
+}
+
+.hero-home .hero-text {
+  max-width: 35rem;
+}
+
+.hero-home .product-shell {
+  box-shadow:
+    0 32px 90px rgba(0,0,0,0.38),
+    0 0 0 1px rgba(255,255,255,0.035) inset;
+}
+
+.hero-home .product-stage::after {
+  content: "";
+  position: absolute;
+  left: 12%;
+  right: 12%;
+  bottom: -22px;
+  height: 34px;
+  border-radius: 999px;
+  background: radial-gradient(ellipse, rgba(0,0,0,0.30), transparent 68%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.hero-home .shell-chip,
+.hero-home .hero-note-label {
+  letter-spacing: 0.055em;
+}
+
+@media (max-width: 980px) {
+  .hero-home {
+    padding-top: 78px !important;
+  }
+
+  .hero-home .hero-copy {
+    transform: none;
+  }
+
+  .hero-home .product-stage::after {
+    display: none;
+  }
+}
