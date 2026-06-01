@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Status | Delquro Labs</title>
+  <meta name="description" content="Current product status and launch readiness information for Delquro Labs." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="plain-policy-page">
+  <div class="site-shell">
+    <header class="topbar">
+      <div class="wrap topbar-inner">
+        <a href="index.html" class="brand-lockup" aria-label="Delquro Labs home">
+          <img src="logo.png" alt="Delquro Labs logo" class="brand-logo" />
+          <div class="brand-text">
+            <span class="brand-name">Del<span>Quro</span> Labs</span>
+            <span class="brand-subtitle">Operational software, thoughtfully built</span>
+          </div>
+        </a>
+        <nav class="nav" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="commonwealth-connect.html">Commonwealth: Connect</a>
+          <a href="support.html">Support</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="content-panel policy-page">
+        <h1>Status</h1>
+        <p class="policy-meta">Last updated: May 2026</p>
+
+        <h2>Product Status</h2>
+        <p>Commonwealth: Connect is currently in preparation for controlled launch.</p>
+
+        <h2>Current Focus</h2>
+        <p>The current focus is completing the core workflow for team communication, schedule visibility, PTO awareness, manager-posted huddles, and reliable notifications.</p>
+
+        <h2>Launch Readiness</h2>
+        <p>Before broader release, Delquro Labs is reviewing mobile behavior, login stability, notification behavior, privacy readiness, account deletion support, and general product reliability.</p>
+
+        
+        <h2>Launch Countdown</h2>
+        <p>Controlled launch target: <strong>July 1, 2026</strong>.</p>
+        <p id="launch-countdown" class="status-countdown" aria-live="polite">Calculating launch countdown...</p>
+        <script>
+          (function () {
+            var target = new Date("2026-07-01T09:00:00-04:00").getTime();
+            var output = document.getElementById("launch-countdown");
+            if (!output) return;
+
+            function updateCountdown() {
+              var now = new Date().getTime();
+              var distance = target - now;
+
+              if (distance <= 0) {
+                output.textContent = "Launch target date has arrived.";
+                return;
+              }
+
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+              output.textContent = days + " days, " + hours + " hours, " + minutes + " minutes, " + seconds + " seconds";
+            }
+
+            updateCountdown();
+            setInterval(updateCountdown, 1000);
+          })();
+        </script>
+        <h2>Contact</h2>
+        <p>For support or access questions, contact <a href="mailto:info@delquro.com">info@delquro.com</a>.</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap footer-inner">
+        <div>
+          <div class="footer-brand">Delquro Labs</div>
+          <p class="footer-copy">Focused software for communication, coordination, and operational clarity.</p>
+        </div>
+        <div class="footer-links footer-links-minimal">
+          <a href="resources.html">Resources</a>
+        </div>
+      </div>
+      <div class="wrap footer-bottom">
+        <span>© 2026 Delquro Labs</span>
+        <span>info@delquro.com</span>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
+

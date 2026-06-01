@@ -70,7 +70,68 @@
           </div>
         </div>
       </section>
-      <section class="section section-tight"><div class="wrap"><div class="feature-band"><div class="feature-copy"><span class="eyebrow">Featured application</span><h2>Commonwealth: Connect</h2><p>Built for veterinary hospital teams that need a centralized way to keep people informed, coordinated, and aligned.</p></div><div class="feature-actions"><a href="commonwealth-connect.html" class="btn btn-primary">Open Product Page</a><a href="privacy.html" class="btn btn-secondary">Privacy Policy</a></div></div></div></section>
+      
+      <section class="section product-preview-section" id="workflow-preview">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="eyebrow">Product Preview</span>
+            <h2>See the workflow in motion</h2>
+            <p>Commonwealth: Connect is built around the daily moments that keep a team aligned.</p>
+          </div>
+
+          <div class="preview-panel">
+            <div class="preview-tabs" role="tablist" aria-label="Commonwealth Connect workflow preview">
+              <button class="preview-tab is-active" type="button" data-preview-tab="chat" aria-selected="true">Chat</button>
+              <button class="preview-tab" type="button" data-preview-tab="schedule" aria-selected="false">Schedule</button>
+              <button class="preview-tab" type="button" data-preview-tab="huddle" aria-selected="false">Huddle</button>
+            </div>
+
+            <div class="preview-content">
+              <article class="preview-card is-active" data-preview-card="chat">
+                <span class="chip">Team Chat</span>
+                <h3>Keep updates in one place.</h3>
+                <p>Team chat gives staff a shared space for quick updates, daily questions, and operational communication without scattering information across multiple tools.</p>
+              </article>
+
+              <article class="preview-card" data-preview-card="schedule">
+                <span class="chip">Schedule Visibility</span>
+                <h3>Make the day easier to see.</h3>
+                <p>Schedule visibility helps the team quickly reference posted schedules, understand coverage, and stay aligned around the workday.</p>
+              </article>
+
+              <article class="preview-card" data-preview-card="huddle">
+                <span class="chip">Manager Huddles</span>
+                <h3>Make important updates easy to find.</h3>
+                <p>Manager-posted huddles give leadership a simple place to share focused updates, reminders, and operational notes the team can return to.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <script>
+        (function () {
+          var tabs = document.querySelectorAll("[data-preview-tab]");
+          var cards = document.querySelectorAll("[data-preview-card]");
+
+          tabs.forEach(function (tab) {
+            tab.addEventListener("click", function () {
+              var target = tab.getAttribute("data-preview-tab");
+
+              tabs.forEach(function (item) {
+                var isActive = item === tab;
+                item.classList.toggle("is-active", isActive);
+                item.setAttribute("aria-selected", isActive ? "true" : "false");
+              });
+
+              cards.forEach(function (card) {
+                card.classList.toggle("is-active", card.getAttribute("data-preview-card") === target);
+              });
+            });
+          });
+        })();
+      </script>
+<section class="section section-tight"><div class="wrap"><div class="feature-band"><div class="feature-copy"><span class="eyebrow">Featured application</span><h2>Commonwealth: Connect</h2><p>Built for veterinary hospital teams that need a centralized way to keep people informed, coordinated, and aligned.</p></div><div class="feature-actions"><a href="commonwealth-connect.html" class="btn btn-primary">Open Product Page</a><a href="privacy.html" class="btn btn-secondary">Privacy Policy</a></div></div></div></section>
       <section class="section section-tight"><div class="wrap"><div class="split-panel"><div><span class="eyebrow">Built by Delquro Labs</span><h2>Focused company. Focused products.</h2></div><p>Delquro Labs is centered on a simple principle: software should make the workday easier, clearer, and more coordinated â€” not more cluttered.</p></div></div></section>
     </main>
     <footer class="footer">
@@ -79,13 +140,9 @@
       <div class="footer-brand">Delquro Labs</div>
       <p class="footer-copy">Focused software for communication, coordination, and operational clarity.</p>
     </div>
-    <div class="footer-links">
-      <a href="commonwealth-connect.html">Commonwealth: Connect</a>
-      <a href="support.html">Support</a>
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="terms.html">Terms of Service</a>
-          <a href="account-deletion.html">Account Deletion</a>
-    </div>
+    <div class="footer-links footer-links-minimal">
+          <a href="resources.html">Resources</a>
+        </div>
   </div>
   <div class="wrap footer-bottom">
     <span>Â© 2026 Delquro Labs</span>
@@ -95,4 +152,7 @@
   </div>
 </body>
 </html>
+
+
+
 
