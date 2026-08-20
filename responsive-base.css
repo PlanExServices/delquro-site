@@ -187,8 +187,8 @@ a,
     align-items: flex-start;
   }
 
-  .footer-links {
-    text-align: left;
+  .footer-nav {
+    gap: 28px;
   }
 }
 
@@ -208,9 +208,9 @@ a,
     padding: 14px 0;
   }
 
-  .brand-logo {
-    width: 52px;
-    height: 52px;
+  .brand-mark {
+    width: 30px;
+    height: 36px;
   }
 
   .nav {
@@ -279,10 +279,6 @@ a,
 
   .brand-lockup {
     gap: 12px;
-  }
-
-  .brand-subtitle {
-    display: none;
   }
 
   .nav {
